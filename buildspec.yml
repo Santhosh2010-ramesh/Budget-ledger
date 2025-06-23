@@ -2,14 +2,14 @@ version: 0.2
 
 env:
   variables:
-    ACCOUNT_ID: 557690580165
+    ACCOUNT_ID: 047719652562
     REGION: us-east-1
-    REPO_NAME: expense
+    REPO_NAME: capstone_ecr
     IMAGE_TAG: new2
-    IMAGE_URI: 557690580165.dkr.ecr.us-east-1.amazonaws.com/expense:new2
-    SONAR_HOST_URL: http://44.204.71.196
+    IMAGE_URI: 047719652562.dkr.ecr.us-east-1.amazonaws.com/capstone_ecr:new2
+    SONAR_HOST_URL: http://34.229.94.66
     SONAR_PROJECT_KEY: project
-    SONAR_LOGIN: sqp_bad3c0442a02d9dcbc2190ddac0888de1cece0e4
+    SONAR_LOGIN: sqp_a6e8240f8d3d927d29c3591f13bd78bce7f768f2
 
 phases:
   install:
