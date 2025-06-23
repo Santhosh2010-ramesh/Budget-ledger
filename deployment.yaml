@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Budget Ledger
+  name: BudgetLedger
   labels:
-    app: Budget Ledger
+    app: BudgetLedger
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: Budget Ledger
+      app: BudgetLedger
   template:
     metadata:
       labels:
-        app: Budget Ledger
+        app: BudgetLedger
     spec:
       containers:
-        - name: Budget Ledger
+        - name: BudgetLedger
           image: IMAGE_PLACEHOLDER
           ports:
             - containerPort: 80
