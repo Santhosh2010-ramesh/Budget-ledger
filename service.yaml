@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: BudgetLedger-service
+  name: budgetledger-service
 spec:
   selector:
-    app: BudgetLedger
+    app: budgetledger
   ports:
     - protocol: TCP
       port: 80
