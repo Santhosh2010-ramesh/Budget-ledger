@@ -7,9 +7,6 @@ env:
     REPO_NAME: myrepo
     IMAGE_TAG: latest
     IMAGE_URI: myrepo:latest 047719652562.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest
-    SONAR_HOST_URL: http://34.229.94.66
-    SONAR_PROJECT_KEY: project
-    SONAR_LOGIN: sqp_a6e8240f8d3d927d29c3591f13bd78bce7f768f2
 
 phases:
   install:
@@ -29,8 +26,6 @@ phases:
     commands:
       - echo Building JAR inside app-tier...
       - mvn clean package -DskipTests
-      - echo Running SonarQube Analysis...
-      - mvn verify sonar:sonar -DskipTests -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_LOGIN
       - echo Building Docker image...
       - docker build -t $REPO_NAME:$IMAGE_TAG .
       - docker tag $REPO_NAME:$IMAGE_TAG $IMAGE_URI
