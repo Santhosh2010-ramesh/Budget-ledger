@@ -6,7 +6,7 @@ env:
     REGION: us-east-1
     REPO_NAME: capstone_ecr
     IMAGE_TAG: news
-    IMAGE_URI: 047719652562.dkr.ecr.us-east-1.amazonaws.com/capstone_ecr
+    IMAGE_URI: 047719652562.dkr.ecr.us-east-1.amazonaws.com/capstone_ecr:news
     SONAR_HOST_URL: http://34.229.94.66
     SONAR_PROJECT_KEY: project
     SONAR_LOGIN: sqp_a6e8240f8d3d927d29c3591f13bd78bce7f768f2
