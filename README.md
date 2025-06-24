@@ -168,18 +168,19 @@ Ensure your CodePipeline is configured to:
 -CloudFormation stack provisions Route 53 records with failover routing policy.
 -Primary DNS points to the EKS Load Balancer in us-east-1.
 -Health checks configured to monitor primary endpoint.
+Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
+![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
 
 #2. -Terraform Route 53 Failover Setup (us-east-2)
 -Terraform provisions secondary Route 53 DNS records for failover.
 -Secondary DNS points to EKS Load Balancer in us-east-2.
 -Automatically switches traffic to us-east-2 if primary region is unhealthy.
+-Codepipeline for us-east-2
+![image](https://github.com/user-attachments/assets/52accade-1f14-4811-b3fb-183e60fc82cb)
+
 
 High availability achieved with DNS-based failover using Route 53.
 
-
-
-Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
-![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
 
 ### End Application through load balancer Access
 -Signup Page
