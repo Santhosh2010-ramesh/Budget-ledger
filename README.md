@@ -154,6 +154,8 @@ Ensure your CodePipeline is configured to:
 - Application is deployed to EKS in `us-east-1` region.
 ![image](https://github.com/user-attachments/assets/cc4a67cb-f1d2-4777-8e29-02be34491958)
 
+Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
+![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
 
 ### 2⃣ Terraform Deployment to AWS EKS (us-west-1)
 
@@ -161,7 +163,7 @@ Ensure your CodePipeline is configured to:
 - CodePipeline triggers Terraform deployment.
 - Application is deployed to EKS in `us-east-2` region.
 ![image](https://github.com/user-attachments/assets/72cb5bda-6acb-416f-85a0-ad1668d30324)
-
+![image](https://github.com/user-attachments/assets/52accade-1f14-4811-b3fb-183e60fc82cb)
 
 ### Phase 4 - Route 53 Failover Routing for Disaster Recovery
 #1.-CloudFormation Route 53 Failover Setup (us-east-1)
@@ -170,8 +172,7 @@ Ensure your CodePipeline is configured to:
 -Health checks configured to monitor primary endpoint.
 ![image](https://github.com/user-attachments/assets/fe090475-13d0-4dd2-905a-a8f56d52bc0e)
 
-Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
-![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
+
 
 #2. -Terraform Route 53 Failover Setup (us-east-2)
 -Terraform provisions secondary Route 53 DNS records for failover.
@@ -180,7 +181,7 @@ Ensure CodePipeline stages are configured with appropriate permissions and regio
 -Codepipeline for us-west-1
 ![image](https://github.com/user-attachments/assets/8c40d1f1-e69b-453b-8f30-9a9b6f07f804)
 
-![image](https://github.com/user-attachments/assets/52accade-1f14-4811-b3fb-183e60fc82cb)
+
 
 
 High availability achieved with DNS-based failover using Route 53.
