@@ -1,4 +1,4 @@
-# 💰 Budget Ledger - Cloud Native Deployment
+# 💰 Budget Ledger - Springboot Deployment
 
 A secure and scalable Spring Boot-based Budget Ledger Application containerized with Docker and deployed to **AWS Elastic Kubernetes Service (EKS)** using Infrastructure as Code (IaC) and CI/CD pipelines.
 ## Website Access
