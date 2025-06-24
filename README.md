@@ -157,7 +157,7 @@ Ensure your CodePipeline is configured to:
 Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
 ![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
 
-### 2⃣ Terraform Deployment to AWS EKS (us-west-1)
+### 2⃣ Terraform Deployment to AWS EKS (us-east-2)
 
 - Terraform scripts provision EKS Cluster and networking in `us-east-2` region.
 - CodePipeline triggers Terraform deployment.
