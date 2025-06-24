@@ -91,6 +91,7 @@ Ensure your SonarQube server is running and credentials are set.
 # Example Maven SonarQube scan
 mvn clean verify sonar:sonar   -Dsonar.projectKey=budget-ledger   -Dsonar.host.url=http://<sonarqube-url>   -Dsonar.login=<sonarqube-token>
 ```
+![image](https://github.com/user-attachments/assets/5acf625a-780a-443b-8321-9b0b1969344c)
 
 ---
 
@@ -151,12 +152,31 @@ Ensure your CodePipeline is configured to:
 - CloudFormation template provisions EKS Cluster and supporting resources.
 - CodePipeline triggers CloudFormation stack update.
 - Application is deployed to EKS in `us-east-1` region.
+![image](https://github.com/user-attachments/assets/cc4a67cb-f1d2-4777-8e29-02be34491958)
+
 
 ### 2⃣ Terraform Deployment to AWS EKS (us-east-2)
 
 - Terraform scripts provision EKS Cluster and networking in `us-east-2` region.
 - CodePipeline triggers Terraform deployment.
 - Application is deployed to EKS in `us-east-2` region.
+![image](https://github.com/user-attachments/assets/72cb5bda-6acb-416f-85a0-ad1668d30324)
+
+
+### Phase 4 - Route 53 Failover Routing for Disaster Recovery
+#1.-CloudFormation Route 53 Failover Setup (us-east-1)
+-CloudFormation stack provisions Route 53 records with failover routing policy.
+-Primary DNS points to the EKS Load Balancer in us-east-1.
+-Health checks configured to monitor primary endpoint.
+
+#2. -Terraform Route 53 Failover Setup (us-east-2)
+-Terraform provisions secondary Route 53 DNS records for failover.
+-Secondary DNS points to EKS Load Balancer in us-east-2.
+-Automatically switches traffic to us-east-2 if primary region is unhealthy.
+
+High availability achieved with DNS-based failover using Route 53.
+
+
 
 Ensure CodePipeline stages are configured with appropriate permissions and regional targeting.
 ![Screenshot 2025-06-24 023447](https://github.com/user-attachments/assets/5c3c8d20-f32c-43d0-bab7-73afbd9f3129)
