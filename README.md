@@ -155,7 +155,7 @@ Ensure your CodePipeline is configured to:
 ![image](https://github.com/user-attachments/assets/cc4a67cb-f1d2-4777-8e29-02be34491958)
 
 
-### 2⃣ Terraform Deployment to AWS EKS (us-east-2)
+### 2⃣ Terraform Deployment to AWS EKS (us-west-1)
 
 - Terraform scripts provision EKS Cluster and networking in `us-east-2` region.
 - CodePipeline triggers Terraform deployment.
@@ -175,7 +175,7 @@ Ensure CodePipeline stages are configured with appropriate permissions and regio
 -Terraform provisions secondary Route 53 DNS records for failover.
 -Secondary DNS points to EKS Load Balancer in us-east-2.
 -Automatically switches traffic to us-east-2 if primary region is unhealthy.
--Codepipeline for us-east-2
+-Codepipeline for us-west-1
 ![image](https://github.com/user-attachments/assets/52accade-1f14-4811-b3fb-183e60fc82cb)
 
 
