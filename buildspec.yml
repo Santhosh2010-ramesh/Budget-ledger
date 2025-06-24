@@ -6,7 +6,7 @@ env:
     REGION: us-east-1
     REPO_NAME: myrepo
     IMAGE_TAG: latest
-    IMAGE_URI: myrepo:latest 047719652562.dkr.ecr.us-east-1.amazonaws.com/myrepo
+    IMAGE_URI: 047719652562.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest
 
 phases:
   install:
