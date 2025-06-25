@@ -2,11 +2,11 @@ version: 0.2
 
 env:
   variables:
-    ACCOUNT_ID: 047719652562
+    ACCOUNT_ID: 026090550003
     REGION: us-east-1
     REPO_NAME: myrepo
     IMAGE_TAG: latest2
-    IMAGE_URI: 047719652562.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest2
+    IMAGE_URI: 026090550003.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest2
 
 phases:
   install:
