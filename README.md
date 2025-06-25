@@ -1,8 +1,8 @@
-# 💰 Budget Ledger - Springboot Deployment
+# 💰 Budget Ledger - Goldencat Bank Springboot Deployment
 
 A secure and scalable Spring Boot-based Budget Ledger Application containerized with Docker and deployed to **AWS Elastic Kubernetes Service (EKS)** using Infrastructure as Code (IaC) Cloudformation , Terraform and CI/CD pipelines.
 ## Website Access
-[http://a3fe3df495a4f49998bbbd05c42cf14a-1466525858.us-east-1.elb.amazonaws.com/login](http://santhoshramesh.com/login)
+[[http://a3fe3df495a4f49998bbbd05c42cf14a-1466525858.us-east-1.elb.amazonaws.com/login](http://santhoshramesh.com/login)](http://santhoshramesh.com/dashboard)
 ---
 
 ## 📁 Project Structure
