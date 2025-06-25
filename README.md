@@ -189,16 +189,14 @@ High availability achieved with DNS-based failover using Route 53.
 
 ### End Application through load balancer Access
 -Signup Page
-![image](https://github.com/user-attachments/assets/8d97afbe-0867-4fc3-8991-1f46be7f5b30)
+
 
 -Login Page
-![image](https://github.com/user-attachments/assets/b0d1c8d0-ed4f-436e-9108-164b24bed99d)
+
 
 -Dashboard Page
-![image](https://github.com/user-attachments/assets/24bd8c08-305a-4b0c-8a23-698294df12f3)
 
-- Transactions page
-![image](https://github.com/user-attachments/assets/73ccfe40-f4c1-4335-94ca-482384a99b33)
+
 
 
 
